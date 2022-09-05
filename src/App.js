@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="body">
       <div className="content">
-        <h1>TO DO LIST!!</h1>
+        <h1 className="title">TO DO LIST!!</h1>
         <InputItem list={list} setList={setList} />
         <ItemList list={list} setList={setList} />
       </div>
