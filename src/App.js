@@ -8,11 +8,22 @@ import "./style/App.css";
 
 function App() {
   const [list, setList] = useState([]);
+  const [write, setWrite] = useState("");
   return (
     <div>
       <h1>TO DO LIST!!</h1>
-      <InputItem list={list} setList={setList} />
-      <ItemList list={list} setList={setList} />
+      <InputItem
+        list={list}
+        setList={setList}
+        write={write}
+        setWrite={setWrite}
+      />
+      <ItemList
+        list={list}
+        setList={setList}
+        write={write}
+        setWrite={setWrite}
+      />
     </div>
   );
 }
