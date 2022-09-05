@@ -12,7 +12,7 @@ li {
 
 .body {
   display: flex;
-  width: 60rem;
+  width: 30rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,7 @@ li {
   text-align: center;
 }
 .content {
-  width: 50%;
+  width: 100%;
 }
 .title {
   margin-top: 10px;
@@ -29,11 +29,20 @@ li {
   font-family: fantasy;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (min-width: 601px) and (max-width: 750px) {
   .body {
-    width: 30rem;
+    width: 25rem;
   }
   .content {
-    width: 75%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .body {
+    width: 17rem;
+  }
+  .content {
+    width: 100%;
   }
 }
