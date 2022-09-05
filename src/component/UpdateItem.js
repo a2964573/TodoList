@@ -4,7 +4,7 @@ import { Form, Button, InputGroup } from "react-bootstrap";
 function UpdateItem(props) {
   const [write, setWrite] = useState("");
   return (
-    <InputGroup style={{ width: "50%" }}>
+    <InputGroup>
       <Form.Control
         placeholder="write on here for to change"
         value={write}

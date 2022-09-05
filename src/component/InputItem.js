@@ -15,7 +15,7 @@ function InputItem(props) {
 
   return (
     <>
-      <InputGroup style={{ width: "60%", marginBottom: "20px" }}>
+      <InputGroup style={{ marginBottom: "20px" }}>
         <Form.Control
           value={write}
           placeholder="write on here"

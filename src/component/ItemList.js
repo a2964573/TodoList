@@ -9,7 +9,7 @@ function ItemList(props) {
   props.list.map((element, index) => {
     item.unshift(
       <li key={index} style={{ marginBottom: "20px" }}>
-        <InputGroup style={{ width: "50%" }}>
+        <InputGroup>
           <InputGroup.Checkbox
             style={{ border: "none" }}
             className="checkbox"

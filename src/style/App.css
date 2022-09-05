@@ -5,3 +5,13 @@
 li {
   list-style: none;
 }
+
+.body {
+  display: flex;
+  width: 1200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
