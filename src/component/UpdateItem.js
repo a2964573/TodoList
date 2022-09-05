@@ -15,7 +15,6 @@ function UpdateItem(props) {
       <Button
         variant="outline-secondary"
         onClick={() => {
-          // 취소버튼을 누르면 작업이 취소되고 원래대로 돌아온다
           setWrite("");
           document.getElementById(`_${props.element.id}`).style.display =
             "none";
@@ -25,7 +24,6 @@ function UpdateItem(props) {
       <Button
         variant="outline-secondary"
         onClick={() => {
-          // 확인 버튼을 누르면 입력창 value를 같은 id인 text에 덮어씌운다
           if (write !== "") {
             let c = [...props.list];
             c.map((element) => {
@@ -38,6 +36,8 @@ function UpdateItem(props) {
               }
               return props.list;
             });
+          } else {
+            alert("업데이트 항목이 비어있습니다");
           }
         }}>
         ✅

@@ -10,7 +10,6 @@ function InputItem(props) {
       setWrite("");
       setReset(false);
     }
-    console.log(props.list);
     return setReset(false);
   }, [reset]);
 
@@ -38,7 +37,7 @@ function InputItem(props) {
               props.setList(c);
               setReset(true);
             } else {
-              alert("비어있습니다.");
+              alert("입력란이 비어있습니다.");
             }
           }}>
           ADD
